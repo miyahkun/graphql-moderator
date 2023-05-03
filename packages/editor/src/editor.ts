@@ -1,5 +1,5 @@
 import * as d3 from "d3";
-import { DocumentNode, NumberNode, queryFixture } from "./fixtures/query";
+import { NumberNode, queryFixture } from "./fixtures/query";
 import { EDITOR_WIDTH, EDITOR_HEIGHT } from "./constants";
 
 type Content = {
@@ -24,8 +24,6 @@ export const render = () => {
       name: "Root",
     },
   };
-
-  const links = [];
 
   const root = d3
     .select("svg")
