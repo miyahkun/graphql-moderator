@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import "./App.css";
 import { render } from "./editor";
+import { Node } from "./Node";
 
-const EDITOR_WIDTH = 1000;
-const EDITOR_HEIGHT = 900;
+import { EDITOR_WIDTH, EDITOR_HEIGHT } from "./constants";
 
 function App() {
   useEffect(() => {
@@ -17,7 +17,11 @@ function App() {
         width={EDITOR_WIDTH}
         height={EDITOR_HEIGHT}
         className="editor"
-      ></svg>
+      >
+        <foreignObject width="400" height="300">
+          <Node />
+        </foreignObject>
+      </svg>
     </div>
   );
 }

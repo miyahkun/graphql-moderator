@@ -1,0 +1,16 @@
+.root {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid white;
+}
+
+.heading {
+  color: white;
+  font-weight: bold;
+}
+
+.content {
+  color: white;
+  font-weight: bold;
+}
